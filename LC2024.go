@@ -17,14 +17,14 @@ func maxConsecutiveAnswers(a string, k int) int {
 		}
 	}
 	fmt.Println(dp)
-	return max(dp) + k
+	return maxOfArray(dp) + k
 }
 
 func main() {
 	fmt.Println(maxConsecutiveAnswers("TTFF", 2))
 }
 
-func max(a []int) (ans int) {
+func maxOfArray(a []int) (ans int) {
 	for i := 0; i < len(a); i++ {
 		if ans < a[i] {
 			ans = a[i]
