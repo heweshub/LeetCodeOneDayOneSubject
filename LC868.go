@@ -5,32 +5,30 @@ import (
 	"strconv"
 )
 
-func binaryGap(n int) int {
+func binaryGap(n int) (ans int) {
 	numStr := numTobin(n)
 	if numStr == "0" {
 		return 0
 	}
 	frontIdx := -1
-	maxLen := 0
 	for i, v := range numStr {
 		if v == '1' {
 			if frontIdx == -1 {
 				frontIdx = i
 			} else {
-				maxLen = max11(maxLen, i-frontIdx)
+				ans = max11(ans, i-frontIdx)
 			}
 			frontIdx = i
 		}
 	}
-	return maxLen
+	return
 }
-func numTobin(num int) string {
-	s := ""
+func numTobin(num int) (s string) {
 	for num != 0 {
 		s = strconv.Itoa(num%2) + s
 		num /= 2
 	}
-	return s
+	return
 }
 
 func max11(x, y int) int {
