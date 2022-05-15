@@ -39,6 +39,10 @@ func outerTrees(trees [][]int) (ans [][]int) {
 	return
 }
 
+// cross is a calculates the multiplying of the vectors
+// if res < 0 r is on the right of p,
+// else if res > 0 r is on the left of p,
+// else r is on the line of pq.
 func cross(p, q, r []int) int {
 	return (q[0]-p[0])*(r[1]-p[1]) - (q[1]-p[1])*(r[0]-q[0])
 }
