@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func partitionLabels(s string) (partition []int) {
 	lastPos := [26]int{}
 	// 分别标记出哥各个字母最后出现的下标位置
@@ -23,6 +21,6 @@ func partitionLabels(s string) (partition []int) {
 	return
 }
 
-func main() {
-	fmt.Println(partitionLabels("ababcbacadefegdehijhklij"))
-}
+// func main() {
+// 	fmt.Println(partitionLabels("ababcbacadefegdehijhklij"))
+// }

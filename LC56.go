@@ -2,7 +2,7 @@ package main
 
 import "sort"
 
-func merge(intervals [][]int) (ans [][]int) {
+func mergeSort(intervals [][]int) (ans [][]int) {
 	sort.Slice(intervals, func(i, j int) bool {
 		return intervals[i][0] < intervals[j][0]
 	})
@@ -17,11 +17,4 @@ func merge(intervals [][]int) (ans [][]int) {
 	}
 	ans = append(ans, []int{left, right})
 	return
-}
-
-func max(x, y int) int {
-	if x < y {
-		return y
-	}
-	return x
 }

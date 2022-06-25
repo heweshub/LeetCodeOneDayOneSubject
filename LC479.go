@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -23,6 +22,6 @@ func largestPalindrome(n int) int {
 	}
 }
 
-func main() {
-	fmt.Println(largestPalindrome(2))
-}
+// func main() {
+// 	fmt.Println(largestPalindrome(2))
+// }

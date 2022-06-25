@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func selfDividingNumbers(left int, right int) []int {
 	if left > right {
 		return []int{}
@@ -27,6 +25,6 @@ func check(num int) bool {
 	return true
 }
 
-func main() {
-	fmt.Println(selfDividingNumbers(47, 85))
-}
+// func main() {
+// 	fmt.Println(selfDividingNumbers(47, 85))
+// }

@@ -16,6 +16,6 @@ func sortArrayByParity(nums []int) []int {
 	return newNums
 }
 
-func main() {
-	sortArrayByParity([]int{3, 1, 2, 4})
-}
+// func main() {
+// 	sortArrayByParity([]int{3, 1, 2, 4})
+// }

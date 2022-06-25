@@ -20,9 +20,9 @@ func maxConsecutiveAnswers(a string, k int) int {
 	return maxOfArray(dp) + k
 }
 
-func main() {
-	fmt.Println(maxConsecutiveAnswers("TTFF", 2))
-}
+// func main() {
+// 	fmt.Println(maxConsecutiveAnswers("TTFF", 2))
+// }
 
 func maxOfArray(a []int) (ans int) {
 	for i := 0; i < len(a); i++ {

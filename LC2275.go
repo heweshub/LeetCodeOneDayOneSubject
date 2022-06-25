@@ -18,6 +18,6 @@ func Max(x, y int) int {
 	return y
 }
 
-func main() {
-	largestCombination([]int{16, 17, 71, 62, 12, 24, 14})
-}
+// func main() {
+// 	largestCombination([]int{16, 17, 71, 62, 12, 24, 14})
+// }

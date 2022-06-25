@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func findMinHightTrees(n int, edges [][]int) []int {
 	if n == 1 {
 		return []int{0}
@@ -49,6 +47,6 @@ func findMinHightTrees(n int, edges [][]int) []int {
 	return []int{path[m/2]}
 }
 
-func main() {
-	fmt.Println(findMinHightTrees(6, [][]int{{3, 0}, {3, 1}, {3, 2}, {3, 4}, {5, 4}}))
-}
+// func main() {
+// 	fmt.Println(findMinHightTrees(6, [][]int{{3, 0}, {3, 1}, {3, 2}, {3, 4}, {5, 4}}))
+// }

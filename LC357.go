@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"time"
-)
-
 var cnts = []int{10, 101, 840, 6115, 38606, 207177, 920068}
 
 //func countNumbersWithUniqueDigits(n int) int {
@@ -43,8 +38,9 @@ func countNumbersWithUniqueDigits(n int) int {
 	}
 	return ans
 }
-func main() {
-	fmt.Println(time.Now())
-	fmt.Println(countNumbersWithUniqueDigits(8))
-	fmt.Println(time.Now())
-}
+
+// func main() {
+// 	fmt.Println(time.Now())
+// 	fmt.Println(countNumbersWithUniqueDigits(8))
+// 	fmt.Println(time.Now())
+// }

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func matchReplacement(s string, sub string, mappings [][]byte) bool {
 	mp := ['z' + 1]['z' + 1]bool{}
 	for _, p := range mappings {
@@ -19,7 +17,7 @@ next:
 	return false
 }
 
-func main() {
-	//s = "fool3e7bar", sub = "leet", mappings = [["e","3"],["t","7"],["t","8"]]
-	fmt.Println(matchReplacement("fool3e7bar", "leet", [][]byte{{'e', '3'}, {'t', '7'}, {'t', '8'}}))
-}
+// func main() {
+// 	//s = "fool3e7bar", sub = "leet", mappings = [["e","3"],["t","7"],["t","8"]]
+// 	fmt.Println(matchReplacement("fool3e7bar", "leet", [][]byte{{'e', '3'}, {'t', '7'}, {'t', '8'}}))
+// }

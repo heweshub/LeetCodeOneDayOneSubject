@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -27,6 +26,6 @@ func toGoatLatin(sentence string) string {
 	return strings.Join(newWords, " ")
 }
 
-func main() {
-	fmt.Println(toGoatLatin("I speak Goat Latin"))
-}
+// func main() {
+// 	fmt.Println(toGoatLatin("I speak Goat Latin"))
+// }

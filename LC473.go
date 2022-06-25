@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -32,6 +31,6 @@ func makesquare(match []int) bool {
 	return dfs(0)
 }
 
-func main() {
-	fmt.Println(makesquare([]int{1, 1, 2, 2, 2}))
-}
+// func main() {
+// 	fmt.Println(makesquare([]int{1, 1, 2, 2, 2}))
+// }

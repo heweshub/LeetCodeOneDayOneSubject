@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func uniqueMorseRepresentations(words []string) int {
 	alpha := []string{".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
 		"..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.",
@@ -18,6 +16,6 @@ func uniqueMorseRepresentations(words []string) int {
 	return len(cntMap)
 }
 
-func main() {
-	fmt.Println(uniqueMorseRepresentations([]string{"a"}))
-}
+// func main() {
+// 	fmt.Println(uniqueMorseRepresentations([]string{"a"}))
+// }

@@ -34,7 +34,7 @@ package main
 
 type NumArray []int
 
-func Constructor(nums []int) NumArray {
+func Constructor307(nums []int) NumArray {
 	n := len(nums)
 	seg := make(NumArray, n*4)
 	seg.build(nums, 0, 0, n-1)

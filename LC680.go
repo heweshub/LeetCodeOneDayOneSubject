@@ -40,6 +40,6 @@ func validPalindrome(s string) bool {
 	return false
 }
 
-func main() {
-	validPalindrome("abc")
-}
+// func main() {
+// 	validPalindrome("abc")
+// }

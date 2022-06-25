@@ -1,7 +1,6 @@
 package main
 
 import (
-	"strconv"
 	"unicode"
 )
 
@@ -10,9 +9,9 @@ type NestedInteger struct {
 
 func deserialize(s string) *NestedInteger {
 	if s[0] != '[' {
-		num, _ := strconv.Atoi(s)
+		// num, _ := strconv.Atoi(s)
 		ni := &NestedInteger{}
-		ni.SetInteger(num)
+		// ni.SetInteger(num)
 		return ni
 	}
 	stack, num, negative := []*NestedInteger{}, 0, false
@@ -28,13 +27,13 @@ func deserialize(s string) *NestedInteger {
 				if negative {
 					num = -num
 				}
-				ni := NestedInteger{}
-				ni.SetInteger(num)
-				stack[len(stack)-1].Add(ni)
+				// ni := NestedInteger{}
+				// ni.SetInteger(num)
+				// stack[len(stack)-1].Add(ni)
 			}
 			num, negative = 0, false
 			if ch == ']' && len(stack) > 1 {
-				stack[len(stack)-2].Add(*stack[len(stack)-1])
+				// stack[len(stack)-2].Add(*stack[len(stack)-1])
 				stack = stack[:len(stack)-1]
 			}
 		}

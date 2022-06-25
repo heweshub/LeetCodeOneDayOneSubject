@@ -15,6 +15,6 @@ func numberOfLines(widths []int, s string) (ans []int) {
 	return []int{lines, cnt}
 }
 
-func main() {
-	numberOfLines([]int{4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10}, "bbbcccdddaaa")
-}
+// func main() {
+// 	numberOfLines([]int{4, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10}, "bbbcccdddaaa")
+// }

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -39,7 +38,7 @@ func projectionArea(grid [][]int) int {
 	return sum
 }
 
-func main() {
-	//fmt.Println(projectionArea([][]int{{1, 2}, {3, 4}}))
-	fmt.Println(projectionArea([][]int{{2}}))
-}
+// func main() {
+// 	//fmt.Println(projectionArea([][]int{{1, 2}, {3, 4}}))
+// 	fmt.Println(projectionArea([][]int{{2}}))
+// }

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func minMutation(start string, end string, bank []string) int {
 	if start == end {
 		return 0
@@ -41,9 +39,9 @@ func minMutation(start string, end string, bank []string) int {
 	return -1
 }
 
-func main() {
-	fmt.Println(minMutation("AACCGGTT", "AACCGGTA", []string{"AACCGGTA"}))
-	fmt.Println(minMutation("AACCGGTT", "AAACGGTA", []string{"AACCGGTA", "AACCGCTA", "AAACGGTA"}))
-	fmt.Println(minMutation("AAAAACCC", "AACCCCCC", []string{"AAAACCCC", "AAACCCCC", "AACCCCCC"}))
+// func main() {
+// 	fmt.Println(minMutation("AACCGGTT", "AACCGGTA", []string{"AACCGGTA"}))
+// 	fmt.Println(minMutation("AACCGGTT", "AAACGGTA", []string{"AACCGGTA", "AACCGCTA", "AAACGGTA"}))
+// 	fmt.Println(minMutation("AAAAACCC", "AACCCCCC", []string{"AAAACCCC", "AAACCCCC", "AACCCCCC"}))
 
-}
+// }

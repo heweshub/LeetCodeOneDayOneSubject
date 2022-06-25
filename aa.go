@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -67,8 +66,8 @@ func abs1(x int) int {
 	return -x
 }
 
-func main() {
-	//fmt.Println(countLatticePoints([][]int{{2, 2, 1}}))
-	//fmt.Println(countLatticePoints([][]int{{2, 2, 2}, {3, 4, 1}}))
-	fmt.Println(countLatticePoints([][]int{{10, 10, 8}, {5, 9, 2}, {7, 1, 1}}))
-}
+// func main() {
+// 	//fmt.Println(countLatticePoints([][]int{{2, 2, 1}}))
+// 	//fmt.Println(countLatticePoints([][]int{{2, 2, 2}, {3, 4, 1}}))
+// 	fmt.Println(countLatticePoints([][]int{{10, 10, 8}, {5, 9, 2}, {7, 1, 1}}))
+// }

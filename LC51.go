@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // N皇后问题
 var solutions [][]string
 
@@ -58,10 +56,10 @@ func generateBoard(queens []int, n int) (board []string) {
 	return
 }
 
-func main() {
-	for _, i := range solveNQueens(8) {
-		for _, v := range i {
-			fmt.Println(v)
-		}
-	}
-}
+// func main() {
+// 	for _, i := range solveNQueens(8) {
+// 		for _, v := range i {
+// 			fmt.Println(v)
+// 		}
+// 	}
+// }

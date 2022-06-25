@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -35,6 +34,6 @@ func abs(x int) int {
 	return x
 }
 
-func main() {
-	fmt.Println(canReorderDoubled([]int{2, 4, 0, 0, 8, 1}))
-}
+// func main() {
+// 	fmt.Println(canReorderDoubled([]int{2, 4, 0, 0, 8, 1}))
+// }

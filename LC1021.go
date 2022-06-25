@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type node struct {
 	c   byte
 	idx int
@@ -33,11 +31,11 @@ func removeOuterParentheses(s string) string {
 	return ans
 }
 
-func main() {
-	//"(()())(())"
-	//"(()())(())(()(()))"
-	//"()()"
-	fmt.Println(removeOuterParentheses("(()())(())"))
-	fmt.Println(removeOuterParentheses("(()())(())(()(()))"))
-	fmt.Println(removeOuterParentheses("()()"))
-}
+// func main() {
+// 	//"(()())(())"
+// 	//"(()())(())(()(()))"
+// 	//"()()"
+// 	fmt.Println(removeOuterParentheses("(()())(())"))
+// 	fmt.Println(removeOuterParentheses("(()())(())(()(()))"))
+// 	fmt.Println(removeOuterParentheses("()()"))
+// }

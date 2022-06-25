@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -38,6 +37,6 @@ func max11(x, y int) int {
 	return x
 }
 
-func main() {
-	fmt.Println(binaryGap(22))
-}
+// func main() {
+// 	fmt.Println(binaryGap(22))
+// }

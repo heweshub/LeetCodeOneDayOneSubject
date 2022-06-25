@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -15,6 +14,6 @@ func findKthNumber(m, n, k int) int {
 	})
 }
 
-func main() {
-	fmt.Println(findKthNumber(2, 3, 6))
-}
+// func main() {
+// 	fmt.Println(findKthNumber(2, 3, 6))
+// }

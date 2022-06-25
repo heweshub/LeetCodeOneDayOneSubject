@@ -30,10 +30,3 @@ func lengthLongestPath(input string) (ans int) {
 	}
 	return
 }
-
-func max(x, y int) int {
-	if x > y {
-		return x
-	}
-	return y
-}

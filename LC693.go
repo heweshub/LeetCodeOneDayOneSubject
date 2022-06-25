@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -22,7 +21,7 @@ func hasAlternatingBits(n int) (ans bool) {
 	return true
 }
 
-func main() {
-	flag := hasAlternatingBits(11)
-	fmt.Println(flag)
-}
+// func main() {
+// 	flag := hasAlternatingBits(11)
+// 	fmt.Println(flag)
+// }

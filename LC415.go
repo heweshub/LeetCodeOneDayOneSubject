@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func addStrings(num1 string, num2 string) (ans string) {
 	n1, n2 := len(num1), len(num2)
 	for n1 > 0 || n2 > 0 {
@@ -19,6 +17,6 @@ func addStrings(num1 string, num2 string) (ans string) {
 	return
 }
 
-func main() {
-	fmt.Println("ans:", addStrings("123", "1"))
-}
+// func main() {
+// 	fmt.Println("ans:", addStrings("123", "1"))
+// }

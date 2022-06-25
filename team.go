@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 //func getMinimumTime(time []int, fruits [][]int, limit int) int {
 //	times := 0
 //	for _, f := range fruits {
@@ -99,6 +95,6 @@ func conveyorBelt(matrix []string, start []int, end []int) int {
 	return dfs(startX, startY, 0)
 }
 
-func main() {
-	fmt.Println(binaryGap(22))
-}
+// func main() {
+// 	fmt.Println(binaryGap(22))
+// }

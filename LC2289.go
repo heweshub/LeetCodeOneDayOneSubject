@@ -33,6 +33,6 @@ func max(x, y int) int {
 	return x
 }
 
-func main() {
-	totalSteps([]int{5, 3, 4, 4, 7, 3, 6, 11, 8, 5, 11})
-}
+// func main() {
+// 	totalSteps([]int{5, 3, 4, 4, 7, 3, 6, 11, 8, 5, 11})
+// }

@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func minDeletionSize(strs []string) (cnt int) {
 	n, m := len(strs), len(strs[0])
 	mm := make([][]string, m)
@@ -23,8 +21,9 @@ func minDeletionSize(strs []string) (cnt int) {
 	}
 	return
 }
-func main() {
-	fmt.Println(minDeletionSize([]string{"cba", "daf", "ghi"}))
-	fmt.Println(minDeletionSize([]string{"a", "b"}))
-	fmt.Println(minDeletionSize([]string{"zyx", "wvu", "tsr"}))
-}
+
+// func main() {
+// 	fmt.Println(minDeletionSize([]string{"cba", "daf", "ghi"}))
+// 	fmt.Println(minDeletionSize([]string{"a", "b"}))
+// 	fmt.Println(minDeletionSize([]string{"zyx", "wvu", "tsr"}))
+// }

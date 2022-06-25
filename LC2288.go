@@ -21,6 +21,6 @@ func discountPrices(sentence string, discount int) string {
 	return strings.Join(newWords, " ")
 }
 
-func main() {
-	discountPrices("there are $1 $2 and 5$ candies in the shop", 50)
-}
+// func main() {
+// 	discountPrices("there are $1 $2 and 5$ candies in the shop", 50)
+// }

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -17,6 +16,6 @@ func smallestDistancePair(nums []int, k int) int {
 	})
 }
 
-func main() {
-	fmt.Println(smallestDistancePair([]int{1, 3, 1}, 1))
-}
+// func main() {
+// 	fmt.Println(smallestDistancePair([]int{1, 3, 1}, 1))
+// }

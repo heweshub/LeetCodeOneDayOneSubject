@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func consecutiveNumbersSum(n int) int {
 	ans := 0
 	n *= 2
@@ -16,6 +14,6 @@ func consecutiveNumbersSum(n int) int {
 	return ans
 }
 
-func main() {
-	fmt.Println(consecutiveNumbersSum(15))
-}
+// func main() {
+// 	fmt.Println(consecutiveNumbersSum(15))
+// }

@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -19,12 +18,6 @@ func successfulPairs(spells []int, potions []int, success int64) (ans []int) {
 	}
 	return
 }
-func max(x, y int) int {
-	if x < y {
-		return y
-	}
-	return x
-}
 
 func erfen(nums []int, t int) int {
 	l, r := 0, len(nums)-1
@@ -41,10 +34,10 @@ func erfen(nums []int, t int) int {
 	return r
 }
 
-func main() {
-	//spells = [3,1,2], potions = [8,5,8], success = 16
-	//fmt.Println(successfulPairs([]int{3, 1, 2}, []int{8, 5, 8}, 16))
-	//spells = [5,1,3], potions = [1,2,3,4,5], success = 7
-	//fmt.Println(successfulPairs([]int{5, 1, 3}, []int{1, 2, 3, 4, 5}, 7))
-	fmt.Println('z' + 1)
-}
+// func main() {
+// 	//spells = [3,1,2], potions = [8,5,8], success = 16
+// 	//fmt.Println(successfulPairs([]int{3, 1, 2}, []int{8, 5, 8}, 16))
+// 	//spells = [5,1,3], potions = [1,2,3,4,5], success = 7
+// 	//fmt.Println(successfulPairs([]int{5, 1, 3}, []int{1, 2, 3, 4, 5}, 7))
+// 	fmt.Println('z' + 1)
+// }

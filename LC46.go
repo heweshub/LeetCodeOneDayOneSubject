@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // 全排列问题
 var res [][]int
 var depth = 0
@@ -24,6 +22,6 @@ func back(nums []int, dep, length int) {
 	}
 }
 
-func main() {
-	fmt.Println(permute([]int{1, 2, 3, 4}))
-}
+// func main() {
+// 	fmt.Println(permute([]int{1, 2, 3, 4}))
+// }

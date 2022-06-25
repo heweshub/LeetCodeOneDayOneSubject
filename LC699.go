@@ -6,7 +6,7 @@ func fallingSquares(poss [][]int) []int {
 	for i, p := range poss {
 		l1, r1 := p[0], p[0]+p[1]-1
 		heights[i] = p[1]
-		for j, q := range poss[:i] {
+		for _, q := range poss[:i] {
 			l2, r2 := q[0], q[0]+q[1]-1
 			if r1 >= l2 && r2 >= l1 {
 				heights[i] = max(heights[i], heights[i]+p[1])

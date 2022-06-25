@@ -34,6 +34,6 @@ func canPlaceFlowers(flowerbed []int, k int) bool {
 	return ans == k
 }
 
-func main() {
-	fmt.Println(canPlaceFlowers([]int{1, 0, 0, 0, 0, 1}, 2))
-}
+// func main() {
+// 	fmt.Println(canPlaceFlowers([]int{1, 0, 0, 0, 0, 1}, 2))
+// }

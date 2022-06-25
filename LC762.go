@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 	"strings"
@@ -43,6 +42,6 @@ func isZhishu(x int) bool {
 	return false
 }
 
-func main() {
-	fmt.Println(countPrimeSetBits(10, 15))
-}
+// func main() {
+// 	fmt.Println(countPrimeSetBits(10, 15))
+// }

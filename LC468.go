@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -32,6 +31,6 @@ func validIPAddress(queryIP string) string {
 	return "Neither"
 }
 
-func main() {
-	fmt.Println(validIPAddress("172.16.254.1"))
-}
+// func main() {
+// 	fmt.Println(validIPAddress("172.16.254.1"))
+// }

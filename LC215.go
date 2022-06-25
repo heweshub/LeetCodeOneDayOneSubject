@@ -41,6 +41,6 @@ func partition(a []int, l, r int) int {
 	return i + 1
 }
 
-func main() {
-	findKthLargest([]int{3, 2, 1, 5, 6, 4}, 4)
-}
+// func main() {
+// 	findKthLargest([]int{3, 2, 1, 5, 6, 4}, 4)
+// }

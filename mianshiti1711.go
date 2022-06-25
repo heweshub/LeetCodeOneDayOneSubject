@@ -12,19 +12,13 @@ func findClosest(words []string, word1 string, word2 string) (ans int) {
 			id2 = i
 		}
 		if id1 != -1 && id2 != -1 {
-			ans = min(ans, abs(id1, id2))
+			ans = min(ans, abssub(id1, id2))
 		}
 	}
 	return
 }
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
 
-func abs(x, y int) int {
+func abssub(x, y int) int {
 	if x > y {
 		return x - y
 	}

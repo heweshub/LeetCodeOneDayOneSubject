@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func singleNonDuplicate(nums []int) int {
 	l, h := 0, len(nums)-1
 	for l < h {
@@ -15,8 +13,8 @@ func singleNonDuplicate(nums []int) int {
 	return nums[l]
 }
 
-func main() {
-	a := 11
-	fmt.Println(a ^ 1)
-	fmt.Println(a + 1)
-}
+// func main() {
+// 	a := 11
+// 	fmt.Println(a ^ 1)
+// 	fmt.Println(a + 1)
+// }
