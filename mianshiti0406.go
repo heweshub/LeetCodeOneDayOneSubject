@@ -45,6 +45,12 @@ package main
 //	return nil
 //}
 
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 // inorderSuccessor use the advantage of BST
 func inorderSuccessor(root, p *TreeNode) *TreeNode {
 	var successor *TreeNode

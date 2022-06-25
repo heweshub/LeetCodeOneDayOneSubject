@@ -19,3 +19,12 @@ func largestValues(root *TreeNode) (ans []int) {
 	}
 	return
 }
+
+func maxOfArray(a []int) (ans int) {
+	for i := 0; i < len(a); i++ {
+		if ans < a[i] {
+			ans = a[i]
+		}
+	}
+	return
+}

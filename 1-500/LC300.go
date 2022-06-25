@@ -15,3 +15,12 @@ func lengthOfLIS(nums []int) int {
 	}
 	return maxOfArray(dp)
 }
+
+func maxOfArray(a []int) (ans int) {
+	for i := 0; i < len(a); i++ {
+		if ans < a[i] {
+			ans = a[i]
+		}
+	}
+	return
+}

@@ -76,3 +76,10 @@ func strongPasswordChecker(password string) int {
 
 	}
 }
+
+func min(x, y int) int {
+	if x > y {
+		return y
+	}
+	return x
+}

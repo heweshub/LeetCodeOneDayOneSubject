@@ -37,3 +37,10 @@ func minStickers(stickers []string, target string) int {
 	}
 	return -1
 }
+
+func min(x, y int) int {
+	if x > y {
+		return y
+	}
+	return x
+}

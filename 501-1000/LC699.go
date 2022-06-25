@@ -18,3 +18,10 @@ func fallingSquares(poss [][]int) []int {
 	}
 	return heights
 }
+
+func max(x, y int) int {
+	if x < y {
+		return y
+	}
+	return x
+}

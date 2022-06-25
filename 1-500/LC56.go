@@ -18,3 +18,10 @@ func mergeSort(intervals [][]int) (ans [][]int) {
 	ans = append(ans, []int{left, right})
 	return
 }
+
+func max(x, y int) int {
+	if x < y {
+		return y
+	}
+	return x
+}

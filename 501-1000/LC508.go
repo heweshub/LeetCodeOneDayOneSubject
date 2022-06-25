@@ -1,5 +1,11 @@
 package main
 
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
+}
+
 func findFrequentTreeSum(root *TreeNode) (ans []int) {
 	cnt := map[int]int{}
 	maxCnt := 0
