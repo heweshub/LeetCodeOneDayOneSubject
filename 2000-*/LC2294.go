@@ -14,7 +14,7 @@ func partitionArray(nums []int, k int) (ans int) {
 	return
 }
 
-func main() {
-	//partitionArray([]int{3, 6, 1, 2, 5}, 2)
-	partitionArray([]int{1, 2, 3}, 1)
-}
+// func main() {
+// 	//partitionArray([]int{3, 6, 1, 2, 5}, 2)
+// 	partitionArray([]int{1, 2, 3}, 1)
+// }

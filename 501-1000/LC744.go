@@ -14,6 +14,6 @@ func nextGreatestLetter(letters []byte, target byte) byte {
 	return byte(' ')
 }
 
-func main() {
-	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
-}
+// func main() {
+// 	fmt.Println(nextGreatestLetter([]byte{'c', 'f', 'j'}, 'a'))
+// }

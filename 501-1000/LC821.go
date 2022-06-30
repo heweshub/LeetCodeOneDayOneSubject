@@ -46,8 +46,8 @@ func min1(x, y int) int {
 	return x
 }
 
-func main() {
-	shortestToChar("loveleetcode", 'e')
-	// [4 3 2 0 0 0 0 0 -1 -2 -3 0]
-	// [3,2,1,0,1,0,0,1, 2, 2, 1,0]
-}
+// func main() {
+// 	shortestToChar("loveleetcode", 'e')
+// 	// [4 3 2 0 0 0 0 0 -1 -2 -3 0]
+// 	// [3,2,1,0,1,0,0,1, 2, 2, 1,0]
+// }

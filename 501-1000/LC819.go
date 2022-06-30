@@ -52,6 +52,6 @@ func selectLetter(req string) (ans []string) {
 	return
 }
 
-func main() {
-	mostCommonWord("Bob!", []string{"hit"})
-}
+// func main() {
+// 	mostCommonWord("Bob!", []string{"hit"})
+// }

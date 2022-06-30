@@ -14,9 +14,9 @@ func minFlipsMonoIncr(s string) int {
 	return min(dp0, dp1)
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
+// func min(x, y int) int {
+// 	if x < y {
+// 		return x
+// 	}
+// 	return y
+// }
