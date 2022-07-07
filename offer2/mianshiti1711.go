@@ -24,10 +24,3 @@ func abssub(x, y int) int {
 	}
 	return y - x
 }
-
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
