@@ -16,7 +16,3 @@ func reverseWords(s string) string {
 	}
 	return res
 }
-
-func main() {
-
-}
