@@ -29,7 +29,7 @@ func minNumber(nums []int) string {
 			for l < r && compare(pivot, str[r]) {
 				r--
 			}
-			for l < r && compare(pivot, str[l]) {
+			for l < r && compare(str[l], pivot) {
 				l++
 			}
 			str[l], str[r] = str[r], str[l]
