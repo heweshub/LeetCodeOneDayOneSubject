@@ -18,12 +18,12 @@ func isStraight(nums []int) bool {
 	return true
 }
 
-func max(x, y int) int {
-	if x < y {
-		return y
-	}
-	return x
-}
+// func max(x, y int) int {
+// 	if x < y {
+// 		return y
+// 	}
+// 	return x
+// }
 
 // func min(x, y int) int {
 // 	if x < y {

@@ -1,8 +1,5 @@
 package main
 
-import "fmt"
-
-
 var solutions [][]string
 
 func solveNQueens(n int) [][]string {
@@ -12,48 +9,45 @@ func solveNQueens(n int) [][]string {
 		queens[i] = -1
 	}
 	columns := map[int]bool{}
-	dia1, dia2 := map[int]bool{}, map[int]bool{}
-	backtrack(queens, n, 0, columns, dia1, dia2)
+	diagonals1, diagonals2 := map[int]bool{}, map[int]bool{}
+	backtrack(queens, n, 0, columns, diagonals1, diagonals2)
 	return solutions
 }
 
-func backtrack(queens []int, n,row int, columns,dia1,dia2, map[int]bool) {
+func backtrack(queens []int, n, row int, columns, diagonals1, diagonals2 map[int]bool) {
 	if row == n {
 		board := generateBoard(queens, n)
 		solutions = append(solutions, board)
 		return
 	}
-	for i:=0; i<n; i++ {
-		// 列不重复
+	for i := 0; i < n; i++ {
 		if columns[i] {
 			continue
 		}
-		// 右斜线上不重复
-		di1 := row-i
-		if dia1[di1] {
+		diagonal1 := row - i
+		if diagonals1[diagonal1] {
 			continue
 		}
-		// 左斜线上不重复
-		di2 := row + i
-		if dia2[di2] {
+		diagonal2 := row + i
+		if diagonals2[diagonal2] {
 			continue
 		}
 		queens[row] = i
 		columns[i] = true
-		dia1[di1],dia2[di2] = true, true
-		backtrack(queens,n,row+1,columns,dia1,dia2)
+		diagonals1[diagonal1], diagonals2[diagonal2] = true, true
+		backtrack(queens, n, row+1, columns, diagonals1, diagonals2)
 		queens[row] = -1
-		delete(columns,i)
-		delete(dia1,di1)
-		delete(dia2,di2)
+		delete(columns, i)
+		delete(diagonals1, diagonal1)
+		delete(diagonals2, diagonal2)
 	}
 }
 
-func generateBoard(queens []int, n int) []string{
+func generateBoard(queens []int, n int) []string {
 	board := []string{}
-	for i:=0;i<n;i++{
+	for i := 0; i < n; i++ {
 		row := make([]byte, n)
-		for j:=0;j<n;j++{
+		for j := 0; j < n; j++ {
 			row[j] = '.'
 		}
 		row[queens[i]] = 'Q'
@@ -62,6 +56,6 @@ func generateBoard(queens []int, n int) []string{
 	return board
 }
 
-func main() {
-	fmt.Println(solveNQueens(8))
-}
+// func main() {
+// 	fmt.Println(solveNQueens(4))
+// }

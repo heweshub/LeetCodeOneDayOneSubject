@@ -5,9 +5,9 @@ type MaxQueue struct {
 	q []int
 }
 
-func Constructor() MaxQueue {
-	return MaxQueue{}
-}
+// func Constructor() MaxQueue {
+// 	return MaxQueue{}
+// }
 
 func (this *MaxQueue) Max_value() int {
 	if len(this.q) == 0 {

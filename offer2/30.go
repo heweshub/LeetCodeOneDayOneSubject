@@ -33,12 +33,12 @@ func (this *MinStack) Min() int {
 	return this.minstack[len(this.minstack)-1]
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
+// func min(x, y int) int {
+// 	if x < y {
+// 		return x
+// 	}
+// 	return y
+// }
 
 /**
  * Your MinStack object will be instantiated and called as such:
