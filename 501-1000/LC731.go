@@ -4,9 +4,9 @@ type MyCalendarTwo struct {
 	calendar, overlaps [][]int
 }
 
-func Constructor() MyCalendarTwo {
-	return MyCalendarTwo{[][]int{}, [][]int{}}
-}
+// func Constructor() MyCalendarTwo {
+// 	return MyCalendarTwo{[][]int{}, [][]int{}}
+// }
 
 func (this *MyCalendarTwo) Book(start int, end int) bool {
 	for _, v := range this.overlaps {
