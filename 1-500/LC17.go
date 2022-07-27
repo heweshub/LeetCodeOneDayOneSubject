@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var phoneMap map[string]string = map[string]string{
 	"2": "abc",
 	"3": "def",
@@ -37,6 +35,6 @@ func backstrack(digits string, index int, combination string) {
 	}
 }
 
-func main() {
-	fmt.Println(letterCombinations("23"))
-}
+// func main() {
+// 	fmt.Println(letterCombinations("23"))
+// }

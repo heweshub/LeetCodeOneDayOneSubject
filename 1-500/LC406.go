@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"sort"
 )
 
@@ -12,10 +13,12 @@ func reconstructQueue(people [][]int) (ans [][]int) {
 	for _, v := range people {
 		idx := v[1]
 		ans = append(ans[:idx], append([][]int{v}, ans[idx:]...)...)
+		fmt.Println(idx)
+		fmt.Println(ans)
 	}
 	return
 }
 
 // func main() {
-// 	fmt.Println(reconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}}))
+// 	reconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}})
 // }
