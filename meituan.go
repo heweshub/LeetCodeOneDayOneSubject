@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 // func main() {
 // 	var n int
 // 	fmt.Scan(&n)
@@ -12,7 +14,6 @@ package main
 // 		for j, b := range str {
 // 			isLetter := false
 // 			isNumber := false
-
 // 			if b >= 'a' && b <= 'z' || b >= 'A' && b <= 'Z' {
 // 				isLetter = true
 // 			}
@@ -37,3 +38,23 @@ package main
 // 		}
 // 	}
 // }
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+
+	nums := make([]int, n)
+	for i := range nums {
+		fmt.Scan(&nums[i])
+	}
+	indexs := make([]int, n)
+	for i := range indexs {
+		fmt.Scan(&indexs[i])
+	}
+
+	preSum := make([]int, n+1)
+	for i := 0; i < n; i++ {
+		preSum[i+1] = nums[i] + preSum[i]
+	}
+
+}
