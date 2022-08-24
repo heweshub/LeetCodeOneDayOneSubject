@@ -1,5 +1,3 @@
-from tkinter.messagebox import NO
-
 
 class Solution:
     def amountOfTime(self, root: Optional[TreeNode], start: int) -> int:
