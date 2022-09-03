@@ -9,5 +9,5 @@ class Solution:
         if (cn1+cn2) %2 != 0:
             return -1
         n1,m1 = divmod(cn1, 2)
-        n2,m2 = divmod(cn2, 2)
+        n2,m2 = divmod(cn2, 2) 
         return n1+n2 + 2*m1
