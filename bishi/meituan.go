@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 // func main() {
 // 	var n int
 // 	fmt.Scan(&n)
@@ -39,22 +37,22 @@ import "fmt"
 // 	}
 // }
 
-func main() {
-	var n int
-	fmt.Scan(&n)
+// func main() {
+// 	var n int
+// 	fmt.Scan(&n)
 
-	nums := make([]int, n)
-	for i := range nums {
-		fmt.Scan(&nums[i])
-	}
-	indexs := make([]int, n)
-	for i := range indexs {
-		fmt.Scan(&indexs[i])
-	}
+// 	nums := make([]int, n)
+// 	for i := range nums {
+// 		fmt.Scan(&nums[i])
+// 	}
+// 	indexs := make([]int, n)
+// 	for i := range indexs {
+// 		fmt.Scan(&indexs[i])
+// 	}
 
-	preSum := make([]int, n+1)
-	for i := 0; i < n; i++ {
-		preSum[i+1] = nums[i] + preSum[i]
-	}
+// 	preSum := make([]int, n+1)
+// 	for i := 0; i < n; i++ {
+// 		preSum[i+1] = nums[i] + preSum[i]
+// 	}
 
-}
+// }
