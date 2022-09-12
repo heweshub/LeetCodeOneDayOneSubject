@@ -9,6 +9,7 @@ func pathSum(root *TreeNode, target int) (ans [][]int) {
 		}
 		left -= node.Val
 		path = append(path, node.Val)
+		// backtrack
 		defer func() {
 			path = path[:len(path)-1]
 		}()

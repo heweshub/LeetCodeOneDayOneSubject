@@ -13,7 +13,7 @@ func minNumber(nums []int) string {
 	compare := func(str1, str2 string) bool {
 		num1, _ := strconv.Atoi(str1 + str2)
 		num2, _ := strconv.Atoi(str2 + str1)
-		if num1 < num2 {
+		if num1 <= num2 {
 			return true
 		}
 		return false
