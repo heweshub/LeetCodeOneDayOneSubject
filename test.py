@@ -16,5 +16,6 @@ def draw(s1: str,s2: str) -> int:
     choice(cnt)
 
 if __name__ == '__main__':
-    draw("ATM","CAT")
+    # draw("ATM","CAT")
+    a = list(map,)
     

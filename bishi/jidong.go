@@ -1,25 +1,24 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
 var m = map[int]int{1: 0, 2: 1, 3: 2}
 
-func main() {
-	var n int
-	fmt.Scan(&n)
-	nums := make([]int, n)
-	for i := range nums {
-		fmt.Scan(&nums[i])
-	}
-	sum := 0
-	for _, v := range nums {
-		sum += cal(v)
-	}
-	fmt.Println(sum)
-}
+// func main() {
+// 	var n int
+// 	fmt.Scan(&n)
+// 	nums := make([]int, n)
+// 	for i := range nums {
+// 		fmt.Scan(&nums[i])
+// 	}
+// 	sum := 0
+// 	for _, v := range nums {
+// 		sum += cal(v)
+// 	}
+// 	fmt.Println(sum)
+// }
 
 func cal(v int) int {
 	if _, ok := m[v]; ok {
@@ -51,9 +50,9 @@ func isPrime(x int) bool {
 	return true
 }
 
-func min(x, y int) int {
-	if x < y {
-		return x
-	}
-	return y
-}
+// func min(x, y int) int {
+// 	if x < y {
+// 		return x
+// 	}
+// 	return y
+// }
