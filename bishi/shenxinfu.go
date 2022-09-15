@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// var n, x int
@@ -24,7 +26,6 @@ func main() {
 	// 	}
 	// }
 	// fmt.Print(cnt)
-
 	fmt.Println(minDistance("horse", "rose"))
 }
 func max(x, y int) int {
