@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"reflect"
+	"time"
 )
 
 // func main() {
@@ -59,7 +60,9 @@ func bianli(obj interface{}) {
 	// v := reflect.ValueOf(obj)
 	for i := 0; i < t.NumField(); i++ {
 		fmt.Printf("%s\n", t.Field(i).Tag)
+
 	}
+	// rand.Intn(1)
 }
 
 type SomeStruct struct {
@@ -78,9 +81,31 @@ func test(obj interface{}) {
 }
 
 func main() {
-	var ss SomeStruct
-	test(ss)
-	ss.a = 1
-	// ss.s = "22"
-	test(ss)
+	// var ss SomeStruct
+	// test(ss)
+	// ss.a = 1
+	// // ss.s = "22"
+	// test(ss)
+	Limiter()
+}
+
+func Limiter() {
+	var capacity = 100
+	var tokenBucket = make(chan struct{}, capacity)
+
+	var fillInterval = time.Minute
+	fileToken := func() {
+		thicker := time.NewTicker(fillInterval)
+		for {
+			select {
+			case <-thicker.C:
+				tokenBucket <- struct{}{}
+				fmt.Println("in time or in capacity")
+			default:
+				fmt.Println("current number of token is", len(tokenBucket), time.Now())
+			}
+		}
+	}
+	go fileToken()
+	time.Sleep(time.Hour)
 }
