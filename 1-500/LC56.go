@@ -19,12 +19,12 @@ func mergeSort(intervals [][]int) (ans [][]int) {
 	return
 }
 
-func max(x ...int) int {
-	ans := x[0]
-	for _, v := range x[1:] {
-		if ans < v {
-			ans = v
-		}
-	}
-	return ans
-}
+// func max(x ...int) int {
+// 	ans := x[0]
+// 	for _, v := range x[1:] {
+// 		if ans < v {
+// 			ans = v
+// 		}
+// 	}
+// 	return ans
+// }
