@@ -16,10 +16,12 @@ class Solution:
         #     return a
         # return C(x+y, y)
         pass
-        MOD = 10**9+7
+        MOD = 10 ** 9 + 7
+
         @cache
-        def f(x: int, left: int) ->int:
-            if abs(x-e) > left: return 0
+        def f(x: int, left: int) -> int:
+            if abs(x - e) > left: return 0
             if left == 0: return 1
-            return (f(x-1,left-1) + f(x+1,left-1))%MOD
-        return f(s,k)
+            return (f(x - 1, left - 1) + f(x + 1, left - 1)) % MOD
+
+        return f(s, k)

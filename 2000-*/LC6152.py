@@ -11,4 +11,3 @@ class Solution:
                 exp = y + 1  # 补到刚好超过
             exp += y
         return ans
-

@@ -1,13 +1,7 @@
-from calendar import c
-from time import sleep
-
-from pyrsistent import s
-
-
 class Solution:
-    def treeToDoublyList(self, root:'Node') ->'Node':
+    def treeToDoublyList(self, root: 'Node') -> 'Node':
         def dfs(cur):
-            if not cur: return 
+            if not cur: return
             # 中序遍历 左-根-右
             dfs(cur.left)
             if self.pre:
@@ -17,6 +11,7 @@ class Solution:
             # 继续向下迭代
             self.pre = cur
             dfs(cur.right)
+
         if not root: return
         self.pre = None
         dfs(root)

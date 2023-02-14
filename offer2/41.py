@@ -1,5 +1,6 @@
 from heapq import *
 
+
 class MedianFinder:
     def __init__(self):
         self.A = []
@@ -12,4 +13,4 @@ class MedianFinder:
             heappush(self.A, -heappushpop(self.B, -num))
 
     def findMedian(self) -> float:
-        return self.A[0] if len(self.A) != len(self.B) else (self.A[0]-self.B[0])/2.0
+        return self.A[0] if len(self.A) != len(self.B) else (self.A[0] - self.B[0]) / 2.0

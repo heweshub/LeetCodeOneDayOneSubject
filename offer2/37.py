@@ -1,5 +1,5 @@
-
 import collections
+
 
 class Codec:
     def serialize(self, root):
@@ -13,13 +13,13 @@ class Codec:
                 res.append(str(node.val))
                 queue.append(node.left)
                 queue.append(node.right)
-            else: 
+            else:
                 res.append("null")
-        return '['+','.join(res)+']'
+        return '[' + ','.join(res) + ']'
 
     def deserialize(self, data):
         if data == "[]":
-            return 
+            return
         vals, i = data[1:-1].split(','), 1
         root = TreeNode(int(vals[0]))
         queue = collections.deque()
@@ -32,6 +32,6 @@ class Codec:
             i += 1
             if vals[i] != "null":
                 node.right = TreeNode(int(vals[i]))
-                queue.append(node.right) 
+                queue.append(node.right)
             i += 1
         return root
