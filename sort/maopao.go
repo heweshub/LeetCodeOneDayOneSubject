@@ -14,7 +14,7 @@ func maopaosort(nums []int) {
 }
 
 func main() {
-	//nums := []int{6, 3, 9, 2, 7, 1, 8, 4}
-	nums := []int{9, 8, 7, 6, 5, 4, 3, 2}
+	nums := []int{6, 3, 9, 2, 7, 1, 8, 4}
+	//nums := []int{9, 8, 7, 6, 5, 4, 3, 2}
 	maopaosort(nums)
 }
